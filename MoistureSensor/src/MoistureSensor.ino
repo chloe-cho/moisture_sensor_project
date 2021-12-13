@@ -1,6 +1,6 @@
 /*
  * Project MoistureSensor
- * Description:
+ * Description: Reads and publishes data from an external moisture sensor as well as actuating a pump motor.
  * Author:
  * Date:
  */
