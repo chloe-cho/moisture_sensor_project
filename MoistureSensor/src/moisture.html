@@ -2,8 +2,25 @@
 <html>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <body>
- 
+  Current Moisture:<span id="moisture">
+  <button id="connectbutton" onclick="start()">Refresh Data</button>
+  <script type="text/javascript">
+  function start(objButton) {
+      var deviceID = "FILL IN";
+      var accessToken = "FILL IN";
+      var baseURL = "https://api.particle.io/v1/devices/"
 
+      var varName = "moisture";
+      requestURL = baseURL + deviceID + "/" + varName + "/?access_token=" + accessToken;
+      $.getJSON(requestURL, function(json) {
+               document.getElementById("moisture").innerHTML = json.result;
+               });
+  }
+  </script>
+<form action="https://api.particle.io/v1/devices/DEVICE ID/setColor?access_token=ACCESS TOKEN" method="POST">
+    <input type="radio" name="args" value="Water">Water Plant.<br>
+    <input type="submit" value="Do it!">
+</form>
 </body>
 </html>
  
