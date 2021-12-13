@@ -1,12 +1,12 @@
 # EE1301 Final Project: Moisture Sensor
 
 ## Team Members: 
-- Joe Moran		
-- Khanh Vo		 
-- Michael Duthie	
-- Chloe Cho		
-- Yunho Chang		
-- William Dahlke    	 
+- Joe Moran		      moran481
+- Khanh Vo		      vo000060 
+- Michael Duthie	  duthi008
+- Chloe Cho		      cho00035
+- Yunho Chang		    chan2165
+- William Dahlke    dahlk117    	 
 
 ## Project Description
 
