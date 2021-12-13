@@ -12,7 +12,7 @@
 #include <string>
 #include <stdlib.h>
 
-int moistureData;
+int moistureData, moisture;
 
 
 void setup() {
