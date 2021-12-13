@@ -12,8 +12,9 @@
 
 
 ## Project Files
-- moisture_sensor.ino
-- moisture_sensor.html
+- MoistureSensure/src (main directory)
+  - MoistureSensor.ino
+  - moisture.html
 
 ## Hardware Components (Part Numbers)
 - Moisture Sensor (
