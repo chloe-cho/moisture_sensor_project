@@ -38,7 +38,7 @@ int water(String input){
   if(input == "Water"){
     digitalWrite(pump, HIGH);
     delay(3000);
-    digitalWrite(pump, lOW);
+    digitalWrite(pump, LOW);
   }
   else{
     digitalWrite(pump, LOW);
