@@ -5,7 +5,6 @@
  * Date:
  */
 
-
 #define moistureSensor A0
 #define pump D3
 #define LED D7
