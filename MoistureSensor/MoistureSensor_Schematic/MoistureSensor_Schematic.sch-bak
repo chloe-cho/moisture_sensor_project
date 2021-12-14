@@ -1,0 +1,107 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61B7FD62
+P 5250 2250
+F 0 "#PWR?" H 5250 2100 50  0001 C CNN
+F 1 "+3.3V" H 5265 2423 50  0000 C CNN
+F 2 "" H 5250 2250 50  0001 C CNN
+F 3 "" H 5250 2250 50  0001 C CNN
+	1    5250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 61B8045A
+P 5300 4850
+F 0 "#PWR?" H 5300 4600 50  0001 C CNN
+F 1 "Earth" H 5300 4700 50  0001 C CNN
+F 2 "" H 5300 4850 50  0001 C CNN
+F 3 "~" H 5300 4850 50  0001 C CNN
+	1    5300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 61B818D4
+P 6350 4200
+F 0 "Q?" H 6541 4246 50  0001 L CNN
+F 1 "TIP 120" H 6541 4200 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 6550 4125 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 6350 4200 50  0001 L CNN
+	1    6350 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC M?
+U 1 1 61B82511
+P 6250 3300
+F 0 "M?" H 6408 3296 50  0001 L CNN
+F 1 "Motor_DC_PUMP" H 6408 3250 50  0000 L CNN
+F 2 "" H 6250 3210 50  0001 C CNN
+F 3 "~" H 6250 3210 50  0001 C CNN
+	1    6250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:CHT11 U?
+U 1 1 61B830FE
+P 4650 3350
+F 0 "U?" H 4407 3396 50  0001 R CNN
+F 1 "Moisture_Sensor" H 4406 3350 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 4650 2950 50  0001 C CNN
+F 3 "http://aosong.com/en/products-21.html" H 4800 3600 50  0001 C CNN
+	1    4650 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2250 5250 2600
+Wire Wire Line
+	5250 2600 4650 2600
+Wire Wire Line
+	4650 2600 4650 3050
+Wire Wire Line
+	4650 3650 4650 4500
+Wire Wire Line
+	4650 4500 5300 4500
+Wire Wire Line
+	5300 4500 5300 4850
+Wire Wire Line
+	6250 4400 6250 4500
+Wire Wire Line
+	6250 4500 5300 4500
+Connection ~ 5300 4500
+Wire Wire Line
+	5250 2600 6250 2600
+Wire Wire Line
+	6250 2600 6250 3100
+Connection ~ 5250 2600
+Wire Wire Line
+	6250 3600 6250 4000
+Text GLabel 7100 4200 2    50   Input ~ 0
+PIN_D3
+Wire Wire Line
+	6550 4200 7100 4200
+Text GLabel 3850 3350 0    50   Input ~ 0
+PIN_A0
+Wire Wire Line
+	3850 3350 4350 3350
+Text Notes 7350 7500 0    50   ~ 0
+Moisture Sensor Schematic
+Text Notes 8150 7650 0    50   ~ 0
+12/13/2021
+$EndSCHEMATC
