@@ -35,8 +35,8 @@ void loop() {
 
   
   if((moistureData < 1500) && (waterTime < currentTime)){
-    water("Water1");
-    waterTime += 1800000;
+    water("Water0.5");
+    waterTime += 600000;
   }
   
 
