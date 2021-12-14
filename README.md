@@ -18,7 +18,8 @@ Our plant watering device measures soil moisture using a soil moisture sensor. I
 
 ## Hardware Components (Part Numbers)
 - Soil Moisture Sensor (SEN-13322)
-- Submersible Water Pump [Link to part](https://www.amazon.com/MOUNTAIN_ARK-Submersible-Amphibious-Hydroponic-Fountains/dp/B010LY7P3Y/ref=asc_df_B010LY7P3Y/?tag=hyprod-20&linkCode=df0&hvadid=198074289969&hvpos=&hvnetw=g&hvrand=16963616822432394311&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019667&hvtargid=pla-319030373214&psc=1)
+- Submersible Water Pump ([Link to part](https://www.amazon.com/MOUNTAIN_ARK-Submersible-Amphibious-Hydroponic-Fountains/dp/B010LY7P3Y/ref=asc_df_B010LY7P3Y/?tag=hyprod-20&linkCode=df0&hvadid=198074289969&hvpos=&hvnetw=g&hvrand=16963616822432394311&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9019667&hvtargid=pla-319030373214&psc=1))
+- TIP120 Transistor
 
 ## Circuit Diagram
 ![](./img/schematic.jpg)
