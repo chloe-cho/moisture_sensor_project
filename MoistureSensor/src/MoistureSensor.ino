@@ -33,14 +33,15 @@ void loop() {
   moisture = moistureData;
   digitalWrite(LED, LOW);
 
-  
+  //Waters automatically if the moisture level is too low
+  //Will only water at most once every 10 minutes
   if((moistureData < 1500) && (waterTime < currentTime)){
     water("Water0.5");
     waterTime += 600000;
   }
   
 
-  delay(5000); //Only read data every 5s; moisture levels won't cahnge rapidly
+  delay(5000); //Only read data every 5s; moisture levels won't change rapidly
 }
 
 //Function for watering the plant
