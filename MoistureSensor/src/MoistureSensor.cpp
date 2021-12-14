@@ -23,13 +23,14 @@ int water(String input);
 #include <stdlib.h>
 
 int moistureData, moisture;
-
+unsigned long int currentTime;
+unsigned long int waterTime = 0;
 
 void setup() {
   pinMode(moistureSensor, INPUT); //pin setup for moisture sensor
   pinMode(pump, OUTPUT); //pin setup for the motor wired with a transistor
 
-
+  digitalWrite(pump, LOW);
   Particle.variable("Moisture", moisture); //cloud variable that reads moisture data
   Particle.function("Water", water); // cloud function to water the plant
 }
@@ -37,9 +38,14 @@ void setup() {
 
 void loop() {
   moistureData = analogRead(moistureSensor);
-
+  currentTime = millis();
   moisture = moistureData;
   
+  if((moistureData < 1500) && (((currentTime - waterTime) > 1800000) || waterTime == 0)){
+    water("Water");
+    waterTime += 1800000;
+  }
+
   delay(5000); //Only read data every 5s; moisture levels won't cahnge rapidly
 }
 
@@ -47,7 +53,7 @@ void loop() {
 int water(String input){
   if(input == "Water"){
     digitalWrite(pump, HIGH);
-    delay(3000);
+    delay(5000);
     digitalWrite(pump, LOW);
   }
   else{
