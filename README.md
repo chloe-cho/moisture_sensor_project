@@ -21,6 +21,6 @@ Our plant watering device will measure the soil moisture using a soil moisture s
 - Water Pump ()
 
 ## Circuit Diagram
-
+![](./img/schematic.jpg)
 
 
